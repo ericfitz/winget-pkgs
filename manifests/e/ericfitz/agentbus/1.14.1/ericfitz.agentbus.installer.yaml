@@ -1,0 +1,23 @@
+# Created with komac v2.16.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.12.0.schema.json
+
+PackageIdentifier: ericfitz.agentbus
+PackageVersion: 1.14.1
+InstallerType: zip
+NestedInstallerType: portable
+NestedInstallerFiles:
+- RelativeFilePath: agentbus.exe
+  PortableCommandAlias: agentbus
+UpgradeBehavior: install
+Commands:
+- agentbus
+ReleaseDate: 2026-10-07
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/ericfitz/agentbus/releases/download/v1.14.1/agentbus-v1.14.1-windows-amd64.zip
+  InstallerSha256: B09C952CCFCF84573DF15CE999180FEFE6B814401CDD9B2642787DEAB30D6F45
+- Architecture: arm64
+  InstallerUrl: https://github.com/ericfitz/agentbus/releases/download/v1.14.1/agentbus-v1.14.1-windows-arm64.zip
+  InstallerSha256: 698701B12E1FDC5A2CFF5BED3C4B881492795546246B529DA6B133B9A15DC83A
+ManifestType: installer
+ManifestVersion: 1.12.0
